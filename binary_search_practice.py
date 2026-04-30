@@ -1,5 +1,3 @@
-
-
 def binary_search(arr,target):
     n = len(arr)
     start = 0
