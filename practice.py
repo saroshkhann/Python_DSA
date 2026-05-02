@@ -1,0 +1,16 @@
+# Insertion sort
+
+def insertion_sort(arr):
+    n = len(arr)
+    for i in range(n-1):
+        min_index = i
+        for j in range(i+1,n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        arr[i], arr[min_index] = arr[min_index],arr[i]
+    return arr
+
+unsorted_list = [12,11,34,32,56,12,67,89,64]
+
+result = insertion_sort(unsorted_list)
+print(result)
